@@ -25,7 +25,7 @@ docker compose up -d
 
 ```bash
 # Open slots on a given date. 
-curl http://127.0.0.1:8080/appointmentService/ --json '
+curl 'http://127.0.0.1:8080/appointmentService/' --json '
 {
   "openSlotRequest": {
     "date": "2010-01-04",
