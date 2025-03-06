@@ -24,6 +24,7 @@ docker compose up -d
 ## Examples
 
 ```bash
+# Open slots on a given date. 
 curl http://127.0.0.1:8080/appointmentService/ --json '
 {
   "openSlotRequest": {
@@ -31,6 +32,19 @@ curl http://127.0.0.1:8080/appointmentService/ --json '
     "doctor": "mjones"
   }
 }'
-```
 
+# Book an appointment.
+curl 'http://127.0.0.1:8080/appointmentService/' --json '{
+  "appointmentRequest": {
+    "slot": {
+      "doctor": "mjones",
+      "start": "1400",
+      "end": "1450"
+    },
+    "patient": {
+      "id": "jsmith"
+    }
+  }
+}'
+```
 
