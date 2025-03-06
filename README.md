@@ -1,6 +1,13 @@
-# swamp
+# level 0: Swamp of POX
 
-An OTP application
+You can use Erlang + cowboy to simulate a swamp of pox style HTTP API.
+
+```erlang
+appointment(#{<<"openSlotRequest">> := Slot}, Req0) ->
+  appointment(open, Slot, Req0);
+appointment(#{<<"appointmentRequest">> := Booking}, Req0) ->
+  appointment(request, Booking, Req0).
+```
 
 ## Build
 
@@ -16,7 +23,6 @@ docker compose up -d
 
 ## Examples
 
-
 ```bash
 curl http://127.0.0.1:8080/appointmentService/ --json '
 {
@@ -26,3 +32,5 @@ curl http://127.0.0.1:8080/appointmentService/ --json '
   }
 }'
 ```
+
+
