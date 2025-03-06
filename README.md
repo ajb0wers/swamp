@@ -9,6 +9,8 @@ appointment(#{<<"appointmentRequest">> := Booking}, Req0) ->
   appointment(request, Booking, Req0).
 ```
 
+See: [Richardson Maturity Model][1].
+
 ## Build
 
 ```bash
@@ -48,3 +50,13 @@ curl 'http://127.0.0.1:8080/appointmentService/' --json '{
 }'
 ```
 
+## See also
+
+- [Richardson Maturity Model][2] - wikipedia\.org
+- [REST APIs must be hypertext-driven][3] (2008) - roy\.gbvi\.com
+- [Should we rebrand REST?][4] (2021) - kieranpotts\.com
+
+[1]: https://martinfowler.com/articles/richardsonMaturityModel.html
+[2]: https://en.wikipedia.org/wiki/Richardson_Maturity_Model 
+[3]: https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven
+[4]: https://kieranpotts.com/rebranding-rest
