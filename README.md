@@ -15,7 +15,6 @@ See: [Richardson Maturity Model][1].
 
 ```bash
 rebar3 compile
-rebar3 release
 ```
 
 ## Run
