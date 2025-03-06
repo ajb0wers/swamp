@@ -1,0 +1,9 @@
+services:
+  swamp:
+    build: .
+    container_name: swamp
+    ports:
+      - "8080:8080"
+    environment: 
+      ERL_MAX_PORTS: 1024
+
