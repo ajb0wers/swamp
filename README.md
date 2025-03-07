@@ -9,6 +9,8 @@ appointment(#{<<"appointmentRequest">> := Booking}, Req0) ->
   appointment(request, Booking, Req0).
 ```
 
+You don't need Erlang installed to run this app if you use containers.
+
 ## Build
 
 ```bash
@@ -17,12 +19,10 @@ rebar3 compile
 
 # Build the binary
 rebar3 release
-
-# Run
-./_build/default/rel/swamp/bin/swamp foreground
 ```
 
 ## Run
+
 
 ```bash
 # docker build & run
