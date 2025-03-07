@@ -46,7 +46,8 @@ curl 'http://127.0.0.1:8080/appointmentService/' --json '
 }'
 
 # Book an appointment.
-curl 'http://127.0.0.1:8080/appointmentService/' --json '{
+curl 'http://127.0.0.1:8080/appointmentService/' --json '
+{
   "appointmentRequest": {
     "slot": {
       "doctor": "mjones",
