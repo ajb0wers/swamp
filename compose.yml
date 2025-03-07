@@ -1,6 +1,7 @@
 services:
   swamp:
     build: .
+    image: ajb0wers/swamp:latest
     container_name: swamp
     ports:
       - "8080:8080"
