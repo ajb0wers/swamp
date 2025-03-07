@@ -29,7 +29,7 @@ rebar3 release
 docker build --tag ajb0wers/swamp .
 docker run -p 8080:8080 --rm ajb0wers/swamp
 
-# Alternatively, docker compose
+# Alternatively, docker using compose
 docker compose up -d
 ```
 
