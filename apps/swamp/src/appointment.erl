@@ -34,9 +34,9 @@ appointment(open, #{~"doctor" := ~"mjones"}, Req0) ->
       ~"doctor" => #{ ~"id" => ~"mjones"}}}
   ]},
 
-	cowboy_req:reply(200, #{
-		~"content-type" => ~"application/json"
-	}, json:encode(Body), Req0);
+  cowboy_req:reply(200, #{
+    ~"content-type" => ~"application/json"
+  }, json:encode(Body), Req0);
 
 appointment(request, #{~"slot" := Slot, ~"patient" := Patient}, Req0)
   when Patient =:= #{~"id" => ~"jsmith"} ->
@@ -45,5 +45,5 @@ appointment(request, #{~"slot" := Slot, ~"patient" := Patient}, Req0)
     #{~"slot" => Slot, ~"patient" => Patient}},
 
   cowboy_req:reply(200, #{
-		~"content-type" => ~"application/json"
-	}, json:encode(Body), Req0).
+    ~"content-type" => ~"application/json"
+  }, json:encode(Body), Req0).
