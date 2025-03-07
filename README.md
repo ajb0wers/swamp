@@ -65,7 +65,7 @@ curl 'http://127.0.0.1:8080/appointmentService/' --json '{
 - [Richardson Maturity Model][2] - wikipedia\.org
 - [REST APIs must be hypertext-driven][3] (2008) - roy\.gbvi\.com
 - [Should we rebrand REST?][4] (2021) - kieranpotts\.com
-- [Cowboy][5]
+- [Cowboy HTTP Server][5] - ninenines\.eu 
 
 [1]: https://martinfowler.com/articles/richardsonMaturityModel.html
 [2]: https://en.wikipedia.org/wiki/Richardson_Maturity_Model 
