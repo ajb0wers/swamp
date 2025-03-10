@@ -46,4 +46,7 @@ appointment(request, #{~"slot" := Slot, ~"patient" := Patient}, Req0)
 
   cowboy_req:reply(200, #{
     ~"content-type" => ~"application/json"
-  }, json:encode(Body), Req0).
+  }, json:encode(Body), Req0);
+
+appointment(_, _, Req0) ->
+  cowboy_req:reply(400, Req0).
